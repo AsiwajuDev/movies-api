@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PRECISE FIN. SYSTEMS\\Documents\\Git\\MoviesApi\\MoviesApi\\MoviesApi.csproj": {}
+    "C:\\Users\\PRECISE FIN. SYSTEMS\\Documents\\Git\\movies-api\\MoviesApi\\MoviesApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PRECISE FIN. SYSTEMS\\Documents\\Git\\MoviesApi\\MoviesApi\\MoviesApi.csproj": {
+    "C:\\Users\\PRECISE FIN. SYSTEMS\\Documents\\Git\\movies-api\\MoviesApi\\MoviesApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PRECISE FIN. SYSTEMS\\Documents\\Git\\MoviesApi\\MoviesApi\\MoviesApi.csproj",
+        "projectUniqueName": "C:\\Users\\PRECISE FIN. SYSTEMS\\Documents\\Git\\movies-api\\MoviesApi\\MoviesApi.csproj",
         "projectName": "MoviesApi",
-        "projectPath": "C:\\Users\\PRECISE FIN. SYSTEMS\\Documents\\Git\\MoviesApi\\MoviesApi\\MoviesApi.csproj",
+        "projectPath": "C:\\Users\\PRECISE FIN. SYSTEMS\\Documents\\Git\\movies-api\\MoviesApi\\MoviesApi.csproj",
         "packagesPath": "C:\\Users\\PRECISE FIN. SYSTEMS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PRECISE FIN. SYSTEMS\\Documents\\Git\\MoviesApi\\MoviesApi\\obj\\",
+        "outputPath": "C:\\Users\\PRECISE FIN. SYSTEMS\\Documents\\Git\\movies-api\\MoviesApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PRECISE FIN. SYSTEMS\\AppData\\Roaming\\NuGet\\NuGet.Config",

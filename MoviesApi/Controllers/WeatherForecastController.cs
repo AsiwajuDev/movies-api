@@ -18,9 +18,9 @@ namespace MoviesApi.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
-        private readonly InMemoryRepository _repo;
+        private readonly IRepository _repo;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, InMemoryRepository repo)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IRepository repo)
         {
             _logger = logger;
             _repo = repo;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DFAxHORajB2Hc8wGic4DXPBRvUxlMinRiFE9PA94ZDVd7SQAMG7Pxz40mE3mtxD8QRDtVb/lPtQdpzt/OAGn6g==",
+  "dgSpecHash": "HvX8CAINkAzcPdY5Md3E7mdg02ZGP25HV2AkitconQOFoQkUaVgGN9djzWgy+MWMrAhe+KbQ4Ttj05o25BucPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PRECISE FIN. SYSTEMS\\Documents\\Git\\MoviesApi\\MoviesApi\\MoviesApi.csproj",
+  "projectFilePath": "C:\\Users\\PRECISE FIN. SYSTEMS\\Documents\\Git\\movies-api\\MoviesApi\\MoviesApi.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
