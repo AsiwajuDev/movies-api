@@ -9,19 +9,31 @@ using System.Threading.Tasks;
 namespace MoviesApi.Controllers
 {
     [Route("api/[controller]")]
-    public class GenreController : Controller
+    public class GenresController : Controller
     {        
         private readonly IRepository _repository;
-        public GenreController(IRepository repository)
+        public GenresController(IRepository repository)
         {
             _repository = repository;
         }
 
-        [HttpGet("all")]
+        [HttpGet()]
         public List<Genre> Get()
         {
             var genres = _repository.GetAllGenres();
             return genres;
+        }
+
+        [HttpGet]
+        public Genre Get(int Id)
+        {
+            var genre = _repository.GetGenreById(Id);
+            if(genre == null)
+            {
+                //return NotFound();
+            }
+
+            return genre;
         }
 
         [HttpPost]
