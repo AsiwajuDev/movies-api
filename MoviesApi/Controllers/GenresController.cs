@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using MoviesApi.Entities;
 using MoviesApi.Services;
 using System;
@@ -13,14 +14,17 @@ namespace MoviesApi.Controllers
     public class GenresController : Controller
     {        
         private readonly IRepository _repository;
-        public GenresController(IRepository repository)
+        private readonly ILogger<GenresController> _logger;
+        public GenresController(IRepository repository, ILogger<GenresController> logger)
         {
+            _logger = logger;
             _repository = repository;
         }
 
         [HttpGet("all")]
         public async Task<ActionResult<List<Genre>>> Get()
         {
+            _logger.LogInformation("Get all the genres");
             var genres = await _repository.GetAllGenres();
             return genres;
         }
@@ -31,6 +35,7 @@ namespace MoviesApi.Controllers
             var genre = _repository.GetGenreById(Id);
             if(genre == null)
             {
+                _logger.LogWarning($"Genre with Id {Id} not found");
                 return NotFound();
             }
 
