@@ -31,5 +31,11 @@ namespace MoviesApi.Services
             var obj = _genres.FirstOrDefault(x => x.Id == Id);
             return obj;
         }
+
+        public void AddGenre(Genre genre)
+        {
+            genre.Id = _genres.Max(x => x.Id) + 1;
+            _genres.Add(genre);
+        }
     }
 }

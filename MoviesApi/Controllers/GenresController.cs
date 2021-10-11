@@ -18,21 +18,16 @@ namespace MoviesApi.Controllers
             _repository = repository;
         }
 
-        [HttpGet]
+        [HttpGet("all")]
         public async Task<ActionResult<List<Genre>>> Get()
         {
             var genres = await _repository.GetAllGenres();
             return genres;
         }
 
-        [HttpGet("id")]
+        [HttpGet("{Id:int}")]
         public ActionResult<Genre> Get(int Id)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return BadRequest(ModelState);
-            //}
-
             var genre = _repository.GetGenreById(Id);
             if(genre == null)
             {
@@ -45,30 +40,19 @@ namespace MoviesApi.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] Genre genre)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return BadRequest(ModelState);
-            //}
+            _repository.AddGenre(genre);
             return NoContent();
         }
 
         [HttpPut]
         public ActionResult Put([FromBody] Genre genre)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return BadRequest(ModelState);
-            //}
             return NoContent();
         }
 
         [HttpDelete]
         public ActionResult Delete()
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return BadRequest(ModelState);
-            //}
             return NoContent();
         }
     }
