@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 namespace MoviesApi.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class GenresController : Controller
     {        
         private readonly IRepository _repository;
@@ -27,10 +28,10 @@ namespace MoviesApi.Controllers
         [HttpGet("id")]
         public ActionResult<Genre> Get(int Id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(ModelState);
+            //}
 
             var genre = _repository.GetGenreById(Id);
             if(genre == null)
@@ -44,30 +45,30 @@ namespace MoviesApi.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] Genre genre)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(ModelState);
+            //}
             return NoContent();
         }
 
         [HttpPut]
         public ActionResult Put([FromBody] Genre genre)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(ModelState);
+            //}
             return NoContent();
         }
 
         [HttpDelete]
         public ActionResult Delete()
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(ModelState);
+            //}
             return NoContent();
         }
     }

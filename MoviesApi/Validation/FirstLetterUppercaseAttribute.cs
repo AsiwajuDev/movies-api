@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace MoviesApi.Validation
+{
+    public class FirstLetterUppercaseAttribute : ValidationAttribute
+    {
+        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        {
+            //this makes sure validation only happen when there is value passed from the client side
+            if(value == null || string.IsNullOrEmpty(value.ToString()))
+            {
+                return ValidationResult.Success;
+            }
+
+            var firstLetter = value.ToString()[0].ToString();
+
+            if(firstLetter != firstLetter.ToUpper())
+            {
+                return new ValidationResult("First letter should be uppercase");
+            }
+
+            return ValidationResult.Success;
+        }
+    }
+}
