@@ -25,7 +25,7 @@ namespace MoviesApi.Controllers
             return genres;
         }
 
-        [HttpGet("{Id:int}")]
+        [HttpGet("{Id:int}", Name = "getGenreById")]
         public ActionResult<Genre> Get(int Id)
         {
             var genre = _repository.GetGenreById(Id);
@@ -41,7 +41,7 @@ namespace MoviesApi.Controllers
         public ActionResult Post([FromBody] Genre genre)
         {
             _repository.AddGenre(genre);
-            return NoContent();
+            return new CreatedAtRouteResult("getGenreById", new { Id = genre.Id }, genre);
         }
 
         [HttpPut]
