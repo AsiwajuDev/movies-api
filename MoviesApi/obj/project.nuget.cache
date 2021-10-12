@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "DQmbNqKJWmnPED92BTX8fjSabpFX3NWUaPIkottoooLCfofCNfsdc6mPxgq5EqQWz4tHAwv14qG2gNbAQU+SbA==",
+  "dgSpecHash": "GApv14170e8T1uVAIF17I47KVbt4OEZYbILZjwX8Pnc2XSQ11U8zRBPzlxqOE9i/Xl0lOglX7rojUidTGfXk7A==",
   "success": true,
   "projectFilePath": "C:\\Users\\PRECISE FIN. SYSTEMS\\Documents\\Git\\movies-api\\MoviesApi\\MoviesApi.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\PRECISE FIN. SYSTEMS\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.10\\microsoft.aspnetcore.authentication.jwtbearer.5.0.10.nupkg.sha512",
+    "C:\\Users\\PRECISE FIN. SYSTEMS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\PRECISE FIN. SYSTEMS\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.7.1\\microsoft.identitymodel.jsonwebtokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\PRECISE FIN. SYSTEMS\\.nuget\\packages\\microsoft.identitymodel.logging\\6.7.1\\microsoft.identitymodel.logging.6.7.1.nupkg.sha512",
+    "C:\\Users\\PRECISE FIN. SYSTEMS\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.7.1\\microsoft.identitymodel.protocols.6.7.1.nupkg.sha512",
+    "C:\\Users\\PRECISE FIN. SYSTEMS\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.7.1\\microsoft.identitymodel.protocols.openidconnect.6.7.1.nupkg.sha512",
+    "C:\\Users\\PRECISE FIN. SYSTEMS\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.1\\microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\PRECISE FIN. SYSTEMS\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.1\\system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
+    "C:\\Users\\PRECISE FIN. SYSTEMS\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

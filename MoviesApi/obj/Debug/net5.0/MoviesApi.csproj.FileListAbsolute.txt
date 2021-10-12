@@ -44,3 +44,10 @@ C:\Users\PRECISE FIN. SYSTEMS\Documents\Git\movies-api\MoviesApi\obj\Debug\net5.
 C:\Users\PRECISE FIN. SYSTEMS\Documents\Git\movies-api\MoviesApi\obj\Debug\net5.0\ref\MoviesApi.dll
 C:\Users\PRECISE FIN. SYSTEMS\Documents\Git\movies-api\MoviesApi\obj\Debug\net5.0\MoviesApi.pdb
 C:\Users\PRECISE FIN. SYSTEMS\Documents\Git\movies-api\MoviesApi\obj\Debug\net5.0\MoviesApi.genruntimeconfig.cache
+C:\Users\PRECISE FIN. SYSTEMS\Documents\Git\movies-api\MoviesApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\PRECISE FIN. SYSTEMS\Documents\Git\movies-api\MoviesApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\PRECISE FIN. SYSTEMS\Documents\Git\movies-api\MoviesApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\PRECISE FIN. SYSTEMS\Documents\Git\movies-api\MoviesApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\PRECISE FIN. SYSTEMS\Documents\Git\movies-api\MoviesApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\PRECISE FIN. SYSTEMS\Documents\Git\movies-api\MoviesApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\PRECISE FIN. SYSTEMS\Documents\Git\movies-api\MoviesApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
