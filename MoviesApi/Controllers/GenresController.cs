@@ -13,7 +13,6 @@ namespace MoviesApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class GenresController : Controller
     {        
         private readonly IRepository _repository;
@@ -26,6 +25,7 @@ namespace MoviesApi.Controllers
 
         [HttpGet("all")]
         [ResponseCache(Duration =60)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<List<Genre>>> Get()
         {
             _logger.LogInformation("Get all the genres");
