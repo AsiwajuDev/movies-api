@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MoviesApi.Entities;
+using MoviesApi.Filters;
 using MoviesApi.Services;
 using System;
 using System.Collections.Generic;
@@ -26,6 +27,7 @@ namespace MoviesApi.Controllers
         [HttpGet("all")]
         [ResponseCache(Duration =60)]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [ServiceFilter(typeof(MyActionFilter))]
         public async Task<ActionResult<List<Genre>>> Get()
         {
             _logger.LogInformation("Get all the genres");

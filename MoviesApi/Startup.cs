@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MoviesApi.Filters;
 using MoviesApi.Services;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,7 @@ namespace MoviesApi
             services.AddResponseCaching();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
             services.AddSingleton<IRepository, InMemoryRepository>();
+            services.AddTransient<MyActionFilter>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
