@@ -25,12 +25,8 @@ namespace MoviesApi.Controllers
         }
 
         [HttpGet("all")]
-        [ResponseCache(Duration =60)]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [ServiceFilter(typeof(MyActionFilter))]
         public async Task<ActionResult<List<Genre>>> Get()
         {
-            _logger.LogInformation("Get all the genres");
             var genres = await _repository.GetAllGenres();
             return genres;
         }
@@ -41,7 +37,6 @@ namespace MoviesApi.Controllers
             var genre = _repository.GetGenreById(Id);
             if(genre == null)
             {
-                _logger.LogWarning($"Genre with Id {Id} not found");
                 return NotFound();
             }
 
