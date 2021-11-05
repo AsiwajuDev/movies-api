@@ -45,12 +45,12 @@ namespace MoviesApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] PersonCreateDTO personCreate)
+        public async Task<ActionResult> Post([FromForm] PersonCreateDTO personCreate)
         {
             var person = _mapper.Map<Person>(personCreate);
             //_repository.AddGenre(genre);
             _dbContext.Add(person);
-            await _dbContext.SaveChangesAsync();
+            //await _dbContext.SaveChangesAsync();
             var personResponse = _mapper.Map<PersonDTO>(person);
 
             return new CreatedAtRouteResult("getPersonById", new { Id = personResponse.Id }, personResponse);

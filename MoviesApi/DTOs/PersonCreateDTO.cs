@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using MoviesApi.Validation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -13,5 +15,7 @@ namespace MoviesApi.DTOs
         public string Name { get; set; }
         public string Biograpghy { get; set; }
         public DateTime DateOfBirth { get; set; }
+        [FileSizeValidator(2)]
+        public IFormFile Picture { get; set; }
     }
 }
