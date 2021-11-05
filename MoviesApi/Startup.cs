@@ -32,11 +32,13 @@ namespace MoviesApi
             services.AddDbContext<ApplicationDbContext>(options => 
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddAutoMapper(typeof(Startup));
+
             services.AddControllers(options =>
             {
                 options.Filters.Add(typeof(MyExceptionFilter));
             }).AddXmlDataContractSerializerFormatters();
-            services.AddSingleton<IRepository, InMemoryRepository>();
+            //services.AddSingleton<IRepository, InMemoryRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
