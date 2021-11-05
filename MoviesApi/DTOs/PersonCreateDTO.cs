@@ -16,6 +16,7 @@ namespace MoviesApi.DTOs
         public string Biograpghy { get; set; }
         public DateTime DateOfBirth { get; set; }
         [FileSizeValidator(2)]
+        [ContentTypeValidator(ContentTypeGroup.Image)]
         public IFormFile Picture { get; set; }
     }
 }
